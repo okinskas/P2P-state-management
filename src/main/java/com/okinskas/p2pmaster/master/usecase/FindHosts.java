@@ -1,6 +1,6 @@
 package com.okinskas.p2pmaster.master.usecase;
 
-import com.okinskas.p2pmaster.data.Host;
+import com.okinskas.common.Host;
 import com.okinskas.p2pmaster.data.HostRepository;
 
 import java.util.Optional;

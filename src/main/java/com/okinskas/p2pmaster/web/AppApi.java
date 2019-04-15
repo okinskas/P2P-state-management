@@ -1,6 +1,6 @@
 package com.okinskas.p2pmaster.web;
 
-import com.okinskas.p2pmaster.data.Host;
+import com.okinskas.common.Host;
 import com.okinskas.p2pmaster.master.MasterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

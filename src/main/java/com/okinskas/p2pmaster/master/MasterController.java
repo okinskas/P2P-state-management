@@ -1,6 +1,6 @@
 package com.okinskas.p2pmaster.master;
 
-import com.okinskas.p2pmaster.data.Host;
+import com.okinskas.common.Host;
 import com.okinskas.p2pmaster.master.usecase.AddHost;
 import com.okinskas.p2pmaster.master.usecase.DeleteHost;
 import com.okinskas.p2pmaster.master.usecase.FindHosts;

@@ -1,6 +1,6 @@
 package com.okinskas.p2pmaster.external;
 
-import com.okinskas.p2pmaster.data.Host;
+import com.okinskas.common.Host;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 

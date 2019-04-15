@@ -8,13 +8,13 @@ import com.okinskas.p2pmaster.master.usecase.FindHosts;
 import java.util.Optional;
 import java.util.UUID;
 
-public class MasterController {
+class MasterController {
 
     private final AddHost addHost;
     private final DeleteHost deleteHost;
     private final FindHosts findHosts;
 
-    public MasterController(AddHost addHost,
+    MasterController(AddHost addHost,
                             DeleteHost deleteHost,
                             FindHosts findHosts) {
         this.addHost = addHost;
@@ -22,19 +22,19 @@ public class MasterController {
         this.findHosts = findHosts;
     }
 
-    public Iterable<Host> findHosts() {
+    Iterable<Host> findHosts() {
         return findHosts.findAll();
     }
 
-    public Optional<Host> findHostById(UUID id) {
+    Optional<Host> findHostById(UUID id) {
         return findHosts.findById(id);
     }
 
-    public void removeHost(UUID id) {
+    void removeHost(UUID id) {
         deleteHost.delete(id);
     }
 
-    public Host registerHost(String hostName, String id, String port) {
+    Host registerHost(String hostName, String id, String port) {
         return addHost.add(hostName, id, port);
     }
 }
